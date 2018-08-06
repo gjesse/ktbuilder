@@ -11,6 +11,14 @@ data class Person(val firstName: String,
                   val aDouble: Double? = null,
                   val aFloat: Float)
 
+
 fun main(args: Array<String>) {
-  //  println("Hello ${HelloBuilder().getName()}")
+
+    println(PersonBuilder()
+            .withFirstName("foo")
+            .withLastName("bar")
+            .withAge(42)
+            .withAFloat(42F)
+            .build())
+
 }
